@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar [color]="isPlay ? 'danger' : 'primary'">
+    <ion-title text-center>
+     PH Dialect Translator
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <button ion-button block color="primary" (click)="clickPlay()">Listen</button>
+  <button ion-button block color="danger" (click)="clickStop()">Stop</button>
+
+  <br>
+  <br>
+   <ion-item text-center>
+      <ion-input type="text" [(ngModel)]="matches"></ion-input>
+    </ion-item>
+
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickBiasaya()">Bisaya</button>
+        </ion-col >
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickTagalog()">Tagalog</button>
+        </ion-col >
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickIlocano()">Ilocano</button>
+        </ion-col >
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickBatangueno()">Batangueno</button>
+        </ion-col >
+      </ion-row>
+
+      <ion-row>
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickPanggalatok()">Panggalatok</button>
+        </ion-col >
+        <ion-col col-6>
+          <button ion-button block color="info" (click)="clickWaray()">Waray</button>
+        </ion-col >
+      </ion-row>
+    </ion-grid>
+    
+   
+</ion-content>
+
+<ion-footer>
+  <ion-item text-center>All Right Reserved 2017</ion-item>
+</ion-footer>
